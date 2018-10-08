@@ -25,3 +25,5 @@
   ```
 
 - Include the dependency as normal
+
+- Further reference: [link](https://sookocheff.com/post/java/local-maven-repository/)
