@@ -4,9 +4,12 @@ Notes (and possibly course docs) for courses done online
 
 ## Contents
 
-- [API Design](https://github.com/arya-aag/academia/blob/master/api-design/README.md)
-- [Database Design](https://github.com/arya-aag/academia/blob/master/database/README.md)
-- [Git](https://github.com/arya-aag/academia/blob/master/git/README.md)
-- [Java](https://github.com/arya-aag/academia/blob/master/java/README.md)
-- [Regular Expressions](https://github.com/arya-aag/academia/blob/master/regex/README.md)
-- [Ruby](https://github.com/arya-aag/academia/blob/master/ruby/README.md)
+- [API Design](https://github.com/arya-aag/academia/blob/master/api-design/)
+- [Database Design](https://github.com/arya-aag/academia/blob/master/database/)
+- [Git](https://github.com/arya-aag/academia/blob/master/git/)
+- [Java](https://github.com/arya-aag/academia/blob/master/java/)
+- [Linux](https://github.com/arya-aag/academia/blob/master/linux/)
+- [PostgreSQL](https://github.com/arya-aag/academia/blob/master/postgresql/)
+- [Python](https://github.com/arya-aag/academia/blob/master/python/)
+- [Regular Expressions](https://github.com/arya-aag/academia/blob/master/regex/)
+- [Ruby](https://github.com/arya-aag/academia/blob/master/ruby/)
