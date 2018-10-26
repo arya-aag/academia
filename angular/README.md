@@ -3,9 +3,7 @@
 ## Table of Contents
 
 - [Reference](#reference)
-- [Error handling](#error-handling)
-- [Session management](#session-management)
-- [HTTP Status Codes](#http-status-codes)
+- [Custom Validators](#custom-validators)
 
 ### Reference
 
