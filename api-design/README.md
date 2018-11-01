@@ -2,18 +2,27 @@
 
 ## Table of Contents
 
-* [Reference](#reference)
-* [Error handling](#error-handling)
-* [Session management](#session-management)
-* [HTTP Status Codes](#http-status-codes)
+- [Reference](#reference)
+- [CORS Best Practices](#cors-best-practices)
+- [Error handling](#error-handling)
+- [Session management](#session-management)
+- [HTTP Status Codes](#http-status-codes)
 
 ### Reference
 
 What's outlined below is mostly learnings from following the following online tutorials and blogs:
 
-* [RealWorld Project - Designing a robust JSON API](https://thinkster.io/tutorials/design-a-robust-json-api)
-* [HTTP Status Codes](http://www.restapitutorial.com/httpstatuscodes.html)
-* [JSON Web Tokens with Angular](https://blog.angular-university.io/angular-jwt/)
+- [CORS Best Practices](https://www.moesif.com/blog/technical/cors/Authoritative-Guide-to-CORS-Cross-Origin-Resource-Sharing-for-REST-APIs/)
+- [RealWorld Project - Designing a robust JSON API](https://thinkster.io/tutorials/design-a-robust-json-api)
+- [HTTP Status Codes](http://www.restapitutorial.com/httpstatuscodes.html)
+- [JSON Web Tokens with Angular](https://blog.angular-university.io/angular-jwt/)
+
+### CORS Best Practices
+
+- See 'CORS Best Practices' link in 'References' section
+- https://stackoverflow.com/questions/17858178/allow-anything-through-cors-policy
+- https://stackoverflow.com/questions/16654052/how-do-you-add-a-custom-http-header
+- https://demisx.github.io/rails-api/2014/02/18/configure-accept-headers-cors.html
 
 ### Error handling
 
@@ -34,13 +43,13 @@ All codes are listed [here](#http-status-codes).
 
 _Documentation mostly focused on using JWTs._
 
-* The key property of JWTs is that in order to confirm if they are valid we only need to look at the token itself. So the application server doesn't need to store in-memory token. So app server can be completely stateless.
+- The key property of JWTs is that in order to confirm if they are valid we only need to look at the token itself. So the application server doesn't need to store in-memory token. So app server can be completely stateless.
 
-* A JWT is made of 3 parts: the Header, the Payload and the Signature.
+- A JWT is made of 3 parts: the Header, the Payload and the Signature.
 
-* A JWT is not encrypted.
+- A JWT is not encrypted.
 
-* A JWT Payload is a JS object, usually with user info. _Important_ not to put in the Payload any user information that an attacker could leverage directly. Suggested payload:
+- A JWT Payload is a JS object, usually with user info. _Important_ not to put in the Payload any user information that an attacker could leverage directly. Suggested payload:
 
 ```json
 {
@@ -55,28 +64,28 @@ Note:
 "iat": timestamp of creation of the JWT in seconds since Epoch,
 "exp": token expiration timestamp
 
-* JWT Headers have info about what type of algorithm was used for the signature.
+- JWT Headers have info about what type of algorithm was used for the signature.
 
-* JWT Signatures:
+- JWT Signatures:
 
-  * HS256 (SHA-256 Hash-Based Message Authentication Code)
+  - HS256 (SHA-256 Hash-Based Message Authentication Code)
 
     `signature = SHA256(base64url(header,payload,secret_key))`
 
     Problem with this is:
 
-    * This requires all servers to have a copy of the secret_key
-    * The secret_key can be brute forced if weak
-    * Hard to rotate secret keys
+    - This requires all servers to have a copy of the secret_key
+    - The secret_key can be brute forced if weak
+    - Hard to rotate secret keys
 
-  * RS256 (RSA-SHA256) (RECOMMENDED)
+  - RS256 (RSA-SHA256) (RECOMMENDED)
 
     `signature = RSA(SHA256(base64url(header,payload))`
 
     Advantages:
 
-    * Separation between creation and verification of tokens
-    * Simplified key rotation
+    - Separation between creation and verification of tokens
+    - Simplified key rotation
 
 ### HTTP Status Codes
 
