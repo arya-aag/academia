@@ -2,8 +2,10 @@
 
 ## Table of Contents
 
-- [Reference](#reference)
-- [Custom Validators](#custom-validators)
+- [API Design](#api-design)
+  - [Table of Contents](#table-of-contents)
+    - [Reference](#reference)
+    - [Custom Validators](#custom-validators)
 
 ### Reference
 
@@ -24,9 +26,11 @@ export function onlyAllowThis(letter: string): ValidatorFn {
 **Method 1**: Export the validator directly
 
 ```typescript
-export const onlyAllowA = (control: AbstractControl): { [key: string]: any } | null => {
-  if (control.value !== 'A') {
-    return { NOT_A: 'This is not A!' };
+export const onlyAllowA = (
+  control: AbstractControl
+): { [key: string]: any } | null => {
+  if (control.value !== "A") {
+    return { NOT_A: "This is not A!" };
   }
 };
 ```
