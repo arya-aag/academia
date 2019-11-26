@@ -7,6 +7,7 @@
   - [Complete courses](#complete-courses)
   - [Specific how-tos & tutorials](#specific-how-tos--tutorials)
     - [CI/CD for Flutter apps](#cicd-for-flutter-apps)
+    - [Device orientation](#device-orientation)
     - [Embed youtube video inline](#embed-youtube-video-inline)
     - [Fonts (update family/size etc from code)](#fonts-update-familysize-etc-from-code)
     - [Forms](#forms)
@@ -32,6 +33,11 @@
   - [CI/CD for Flutter Apps Using GitHub Actions](https://medium.com/better-programming/ci-cd-for-flutter-apps-using-github-actions-b833f8f7aac)
 - codemagic (works with any VCS)
   - [Official blog](https://blog.codemagic.io/getting-started-with-codemagic/)
+
+### Device orientation
+
+- [SystemChrome.setPreferredOrientations](https://api.flutter.dev/flutter/services/SystemChrome/setPreferredOrientations.html)
+- [StackOverflow answer](https://stackoverflow.com/questions/49418332/flutter-how-to-prevent-device-orientation-changes-and-force-portrait)
 
 ### Embed youtube video inline
 
