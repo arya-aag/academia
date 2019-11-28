@@ -6,6 +6,7 @@
   - [Contents](#contents)
   - [Complete courses](#complete-courses)
   - [Specific how-tos & tutorials](#specific-how-tos--tutorials)
+    - [Access device contact(s)](#access-device-contacts)
     - [CI/CD for Flutter apps](#cicd-for-flutter-apps)
     - [Device orientation](#device-orientation)
     - [Embed youtube video inline](#embed-youtube-video-inline)
@@ -22,6 +23,18 @@
 ## Specific how-tos & tutorials
 
 **IMPORTANT**: `Please arrange all sections below this in alphabetical order!`
+
+### Access device contact(s)
+
+- [native_contact_picker](https://pub.dev/packages/native_contact_picke)
+  - Show contact picker to pick single contact
+  - Only get name & phone
+  - No permissions required
+- [contacts_service](https://pub.dev/packages/contacts_service)
+  - Access entire contacts list
+  - Access extra fields like email/image/address etc
+  - Allows filtering by name
+  - Requires contacts read/write permissions
 
 ### CI/CD for Flutter apps
 
