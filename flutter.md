@@ -14,7 +14,7 @@
     - [Forms](#forms)
     - [Open particular whatsapp chat message](#open-particular-whatsapp-chat-message)
     - [Routing](#routing)
-    - [Splash Screen](#splash-screen)
+    - [Splash screen & Launcher icon](#splash-screen--launcher-icon)
 
 ## Complete courses
 
@@ -76,7 +76,27 @@
 
 - [Separate routing in different file](https://medium.com/flutter-community/flutter-navigation-cheatsheet-a-guide-to-named-routing-dc642702b98c)
 
-### Splash Screen
+### Splash screen & Launcher icon
+
+- [Quick icon mipmap generator](https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html)
+- [SVG to vector asset converter (Prefer Android Studio's import tool over this)](https://svg2vector.com/)
+- [How to make a gradient background in splash screen (StackOverflow)](https://stackoverflow.com/questions/13929877/how-to-make-gradient-background-in-android/13930644#13930644)
+- Sample splash screen:
+
+  ```xml
+    <!-- launch_background.xml -->
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:drawable="@drawable/splash_background" />
+        <item android:drawable="@drawable/splash_graphic" android:gravity="center"/>
+    </layer-list>
+
+      <!-- splash_background.xml -->
+    <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+        <gradient
+            android:angle="90" android:endColor="#276b81" android:startColor="#55b692" android:type="linear" />
+        <corners android:radius="0dp" />
+  </shape>
+  ```
 
 - [Splash Screen Activity Design (Youtube)](https://www.youtube.com/watch?v=FNBuo-7zg2Q)
 - [launch_background.xml options](https://developer.android.com/guide/topics/resources/drawable-resource)
