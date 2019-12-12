@@ -5,7 +5,8 @@
 - [Flutter](#flutter)
   - [Contents](#contents)
   - [Complete courses](#complete-courses)
-  - [Specific how-tos & tutorials](#specific-how-tos--tutorials)
+  - [Pending research topics/material](#pending-research-topicsmaterial)
+  - [Specific how-tos and tutorials](#specific-how-tos-and-tutorials)
     - [Access device contact(s)](#access-device-contacts)
     - [CI/CD for Flutter apps](#cicd-for-flutter-apps)
     - [Device orientation](#device-orientation)
@@ -14,13 +15,27 @@
     - [Forms](#forms)
     - [Open particular whatsapp chat message](#open-particular-whatsapp-chat-message)
     - [Routing](#routing)
-    - [Splash screen & Launcher icon](#splash-screen--launcher-icon)
+    - [Splash screen and Launcher icon](#splash-screen-and-launcher-icon)
 
 ## Complete courses
 
 - [Learn Flutter & Dart to Build iOS & Android Apps - Maximilian Schwarzmüller](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)
 
-## Specific how-tos & tutorials
+## Pending research topics/material
+
+- FlutterInteract (Dec 2019) (_Review entire video_)
+- Adobe XD Flutter plugin
+- Flutter Supernova
+- Checkout Redrix in PlayStore
+- [flutter.gskinner.com](flutter.gskinner.com)
+- Flutter Material Theming
+- Rive (formerly Flare)
+- Key Widgets
+  - Matrix4 _mtx.setEntry(3,2,0.001)_
+  - SingleChildRenderObjectWidget
+  - Canvas & CustomPainer (_drawVertices, drawAtlas_)
+
+## Specific how-tos and tutorials
 
 **IMPORTANT**: `Please arrange all sections below this in alphabetical order!`
 
@@ -76,7 +91,7 @@
 
 - [Separate routing in different file](https://medium.com/flutter-community/flutter-navigation-cheatsheet-a-guide-to-named-routing-dc642702b98c)
 
-### Splash screen & Launcher icon
+### Splash screen and Launcher icon
 
 - [Quick icon mipmap generator](https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html)
 - [SVG to vector asset converter (Prefer Android Studio's import tool over this)](https://svg2vector.com/)
