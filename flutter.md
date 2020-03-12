@@ -13,6 +13,7 @@
     - [Embed youtube video inline](#embed-youtube-video-inline)
     - [Fonts (update family/size etc from code)](#fonts-update-familysize-etc-from-code)
     - [Forms](#forms)
+    - [Install different flavours](#install-different-flavours)
     - [Open particular whatsapp chat message](#open-particular-whatsapp-chat-message)
     - [Routing](#routing)
     - [Splash screen and Launcher icon](#splash-screen-and-launcher-icon)
@@ -81,6 +82,13 @@
 ### Forms
 
 - When there are several input fields in a form, the widget of choice should be `SingleChildScrollView > Column` over `ListView`. This is because ListView removes widgets from the widget tree when they are scrolled out of view far enough, leading to a loss of data entered in those fields. [(Reference)](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/15145432#overview)
+
+### Install different flavours
+
+- [Link #1](https://iiro.dev/2018/03/02/separating-build-environments/)
+- [Link #2](http://myhexaville.com/2017/08/07/android-how-to-install-debugrelease-versions-simultaneously/)
+- [Link #3](https://medium.com/@animeshjain/build-flavors-in-flutter-android-and-ios-with-different-firebase-projects-per-flavor-27c5c5dac10b)
+- [Link #4](https://medium.com/flutter-community/flutter-ready-to-go-e59873f9d7de)
 
 ### Open particular whatsapp chat message
 
