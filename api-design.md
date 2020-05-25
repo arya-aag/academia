@@ -2,11 +2,13 @@
 
 ## Table of Contents
 
-- [Reference](#reference)
-- [CORS Best Practices](#cors-best-practices)
-- [Error handling](#error-handling)
-- [Session management](#session-management)
-- [HTTP Status Codes](#http-status-codes)
+- [API Design](#api-design)
+  - [Table of Contents](#table-of-contents)
+    - [Reference](#reference)
+    - [CORS Best Practices](#cors-best-practices)
+    - [Error handling](#error-handling)
+    - [Session management](#session-management)
+    - [HTTP Status Codes](#http-status-codes)
 
 ### Reference
 
@@ -20,9 +22,9 @@ What's outlined below is mostly learnings from following the following online tu
 ### CORS Best Practices
 
 - See 'CORS Best Practices' link in 'References' section
-- https://stackoverflow.com/questions/17858178/allow-anything-through-cors-policy
-- https://stackoverflow.com/questions/16654052/how-do-you-add-a-custom-http-header
-- https://demisx.github.io/rails-api/2014/02/18/configure-accept-headers-cors.html
+- [https://stackoverflow.com/questions/17858178/allow-anything-through-cors-policy](https://stackoverflow.com/questions/17858178/allow-anything-through-cors-policy)
+- [https://stackoverflow.com/questions/16654052/how-do-you-add-a-custom-http-header](https://stackoverflow.com/questions/16654052/how-do-you-add-a-custom-http-header)
+- [https://demisx.github.io/rails-api/2014/02/18/configure-accept-headers-cors.html](https://demisx.github.io/rails-api/2014/02/18/configure-accept-headers-cors.html)
 
 ### Error handling
 
