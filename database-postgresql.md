@@ -10,7 +10,8 @@
   - [Change password for postgresql db user](#change-password-for-postgresql-db-user)
   - [Shift timestamps by certain intervals in query](#shift-timestamps-by-certain-intervals-in-query)
   - [Check the size of a table in disk](#check-the-size-of-a-table-in-disk)
-  - [Backup and Restore](#backup-and-restore)
+  - [Backup from database](#backup-from-database)
+  - [Restore from local file](#restore-from-local-file)
   - [Users and Roles](#users-and-roles)
   - [Grant read/write access on tables/schemas](#grant-readwrite-access-on-tablesschemas)
   - [Find path of pg_hba.conf file](#find-path-of-pg_hbaconf-file)
@@ -65,14 +66,19 @@ SELECT pg_size_pretty( pg_total_relation_size('tablename') );
 select pg_relation_size('answers', 'main') as main, pg_relation_size('answers', 'fsm') as fsm, pg_relation_size('answers', 'vm') as vm, pg_relation_size('answers', 'init') as init, pg_table_size('answers'), pg_indexes_size('answers') as indexes, pg_total_relation_size('answers') as total;
 ```
 
-## Backup and Restore
+## Backup from database
 
 ```bash
 sudo -u postgres pg_dump -f /home/ubuntu/backups/local.db -Fc -d db_name --exclude-table=table_name
+```
 
+## Restore from local file
+
+```bash
+sudo -u postgres dropdb restore_db_name
 sudo -u postgres createdb restore_db_name
-
 sudo -u postgres pg_restore -d restore_db_name -O ./local.db
+sudo -u postgres psql -d restore_db_name -c "GRANT SELECT ON ALL TABLES IN SCHEMA public TO db_user_name;"
 ```
 
 ## Users and Roles
